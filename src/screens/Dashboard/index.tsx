@@ -13,6 +13,13 @@ const Dashboard = () => {
         text={'Navigate To Call'}
         onPress={() => navigation.navigate('Call' as never)}
       />
+      <AppButton
+        text={'Navigate To Video Call'}
+        onPress={() => navigation.navigate('VideoCall' as never)}
+        buttonStyle={{
+          marginTop: 8,
+        }}
+      />
     </View>
   );
 };
