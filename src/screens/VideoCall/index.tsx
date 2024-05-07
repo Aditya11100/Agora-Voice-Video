@@ -4,6 +4,7 @@ import {
   ScrollView,
   StyleSheet,
   Text,
+  TouchableOpacity,
   View,
 } from 'react-native';
 import React, {useEffect, useRef, useState} from 'react';
@@ -101,12 +102,12 @@ const VideoCall = () => {
     <SafeAreaView style={styles.main}>
       <Text style={styles.head}>Agora Video Calling Quickstart</Text>
       <View style={styles.btnContainer}>
-        <Text onPress={join} style={styles.button}>
-          Join
-        </Text>
-        <Text onPress={leave} style={styles.button}>
-          Leave
-        </Text>
+        <TouchableOpacity onPress={join}>
+          <Text style={styles.button}>Join</Text>
+        </TouchableOpacity>
+        <TouchableOpacity onPress={leave}>
+          <Text style={styles.button}>Leave</Text>
+        </TouchableOpacity>
       </View>
       <ScrollView
         style={styles.scroll}

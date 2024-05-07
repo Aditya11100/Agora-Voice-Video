@@ -109,9 +109,7 @@ const Call = () => {
           <Text style={styles.button}>Join</Text>
         </TouchableOpacity>
         <TouchableOpacity onPress={leave}>
-          <Text onPress={leave} style={styles.button}>
-            Leave
-          </Text>
+          <Text style={styles.button}>Leave</Text>
         </TouchableOpacity>
       </View>
       <ScrollView
